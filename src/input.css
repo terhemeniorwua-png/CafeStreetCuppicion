@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+
+
+@font-palette-values{
+   color-scheme{
+        deepyellow:-#FF902B
+    }
+}
