@@ -239,6 +239,9 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .size-8 {
     width: calc(var(--spacing) * 8);
     height: calc(var(--spacing) * 8);
@@ -270,6 +273,12 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -279,14 +288,25 @@
   .w-\[85\%\] {
     width: 85%;
   }
+  .w-\[100\%\] {
+    width: 100%;
+  }
   .w-auto {
     width: auto;
   }
-  .w-full {
-    width: 100%;
-  }
   .w-sm {
     width: var(--container-sm);
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .scale-x-100 {
+    --tw-scale-x: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-x-500 {
+    --tw-scale-x: 500%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .rotate-y-180 {
     --tw-rotate-y: rotateY(180deg);
@@ -294,6 +314,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -315,9 +338,6 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
-  }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -492,6 +512,13 @@
   .text-\[\#f09948\] {
     color: #f09948;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .outline-0 {
     outline-style: var(--tw-outline-style);
     outline-width: 0px;
@@ -534,13 +561,30 @@
 .testimony {
   position: relative;
   bottom: calc(var(--spacing) * 28);
-  left: calc(var(--spacing) * 10);
+  left: calc(var(--spacing) * 5);
+  margin-right: calc(var(--spacing) * 5);
   width: calc(var(--spacing) * 56);
   border-radius: var(--radius-md);
   background-color: #f8be89;
   padding: calc(var(--spacing) * 3);
+  font-size: 10px;
   --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -706,6 +750,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
