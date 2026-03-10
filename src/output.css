@@ -266,6 +266,12 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50\] {
+    width: 50;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -433,14 +439,15 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-\[5px\] {
-    font-size: 5px;
-  }
   .text-\[10px\] {
     font-size: 10px;
   }
   .text-\[80\%\] {
     font-size: 80%;
+  }
+  .leading-1 {
+    --tw-leading: calc(var(--spacing) * 1);
+    line-height: calc(var(--spacing) * 1);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
@@ -504,7 +511,7 @@
   width: auto;
   align-items: center;
   background-color: var(--color-white);
-  --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   --tw-drop-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-drop-shadow-alpha), transparent);
   --tw-drop-shadow: var(--tw-drop-shadow-size);
