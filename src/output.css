@@ -188,6 +188,9 @@
   .relative {
     position: relative;
   }
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
   .right-20 {
     right: calc(var(--spacing) * 20);
   }
@@ -244,10 +247,6 @@
     width: calc(var(--spacing) * 20);
     height: calc(var(--spacing) * 20);
   }
-  .size-52 {
-    width: calc(var(--spacing) * 52);
-    height: calc(var(--spacing) * 52);
-  }
   .size-96 {
     width: calc(var(--spacing) * 96);
     height: calc(var(--spacing) * 96);
@@ -271,20 +270,20 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-52 {
-    width: calc(var(--spacing) * 52);
-  }
-  .w-\[50\%\] {
-    width: 50%;
-  }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
   }
   .w-\[85\%\] {
     width: 85%;
   }
   .w-auto {
     width: auto;
+  }
+  .w-full {
+    width: 100%;
   }
   .w-sm {
     width: var(--container-sm);
@@ -316,6 +315,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -532,6 +534,7 @@
 .testimony {
   position: relative;
   bottom: calc(var(--spacing) * 28);
+  left: calc(var(--spacing) * 10);
   width: calc(var(--spacing) * 56);
   border-radius: var(--radius-md);
   background-color: #f8be89;

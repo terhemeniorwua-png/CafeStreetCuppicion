@@ -17,5 +17,5 @@
 }
 
 .testimony{
-    @apply bg-[#f8be89] rounded-md p-3 shadow-2xl  w-56 relative bottom-28
+    @apply bg-[#f8be89] rounded-md p-3 shadow-2xl  w-56 relative bottom-28 left-10
 }
