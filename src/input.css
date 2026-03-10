@@ -7,3 +7,11 @@
         deepyellow:-#FF902B
     }
 }
+
+.card{
+    @apply size-auto bg-white w-auto items-center  relative bottom-20 
+}
+
+.heroButton{
+    @apply flex absolute top-8 bg-white left-5 gap-3 border-double border-8 border-blue-100 rounded-2xl ml-3 outline-0
+}
