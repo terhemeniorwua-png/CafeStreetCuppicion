@@ -15,3 +15,7 @@
 .heroButton{
     @apply flex absolute top-8 bg-white left-5 gap-3 border-double border-8 border-blue-100 rounded-2xl ml-3 outline-0 
 }
+
+.testimony{
+    @apply bg-[#f8be89] rounded-md p-3 shadow-2xl  w-56 relative bottom-28
+}
