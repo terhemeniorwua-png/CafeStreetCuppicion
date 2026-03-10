@@ -9,9 +9,9 @@
 }
 
 .card{
-    @apply size-auto bg-white w-auto items-center  relative bottom-20 
+    @apply size-auto bg-white w-auto items-center  relative bottom-20 shadow-3xl drop-shadow-black 
 }
 
 .heroButton{
-    @apply flex absolute top-8 bg-white left-5 gap-3 border-double border-8 border-blue-100 rounded-2xl ml-3 outline-0
+    @apply flex absolute top-8 bg-white left-5 gap-3 border-double border-8 border-blue-100 rounded-2xl ml-3 outline-0 
 }
